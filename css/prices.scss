@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great');
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'M PLUS 1p', sans-serif;
+  background: url("../images/ТАЗИ да бъде главната-min.jpg"), no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  div.icon {
+    display: none;
+  }
+  header {
+     display: block;
+    height: 500px;
+    nav {
+      display: flex;
+      width: 100%;
+      position: fixed;
+      justify-content: space-around;
+      background-color: black;
+      height: 45px;
+      z-index: 5;
+      a.navbar-brand {
+        color: white;
+        text-decoration: none;
+        font-family: 'Amatic SC', cursive;
+        font-size: 33px;
+        font-weight: bold;
+        padding: unset;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 11px;
+        li {
+
+          a {
+            padding: 12px 24px;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+              color: #fac720;
+              background: white;
+            }
+          }
+        }
+      }
+    }
+
+    div.logo {
+      display: block;
+      width: 29%;
+      margin: 0 auto;
+      opacity: 0.5;
+      padding-top: 3rem;
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      font-weight: bold;
+      text-shadow: 3px 4px 2px rgba(150, 150, 150, 1);
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      margin-top: 25rem;
+      font-family: 'Playfair Display', serif;
+    }
+  }
+  #main{
+    border-radius: 15px;
+    background: rgb(201, 192, 192);
+    h2{
+      font-weight: bold;
+      font-size: 28px;
+    }
+    h3{
+      font-size: 26px;
+    }
+  }
+  footer {
+    background: #343A40;
+    padding: 1% 0;
+    font-size: 0.9em;
+    div.contact-foot {
+      display: flex;
+      justify-content: space-around;
+      ul.left {
+        margin-right: 11%;
+        list-style: none;
+        i {
+          color: gainsboro;
+        }
+        li {
+          color: gainsboro;
+          a{
+            color: gainsboro;
+            text-decoration: none;
+          }
+        }
+      ;
+      }
+      ul.right {
+        list-style: none;
+        margin-left: 11%;
+        margin-top: 2%;
+        li {
+          color: gainsboro;
+          a {
+            color: gainsboro;
+            text-decoration: none;
+            &:hover {
+              color: #1c699d;
+            }
+          }
+        }
+      }
+
+    }
+    span {
+      display: block;
+      color: gainsboro;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+  }
+}
+@media all and(max-width: 1199px) and(min-width: 992px) {
+
+}
+@media all and (max-width: 991px) and(min-width: 768px) {
+  body{
+    header{
+      nav{
+
+      }
+    }
+
+  }
+}
+@media all and (max-width: 768px)and (min-width: 480px){
+  body{
+    header{
+      nav{
+
+      }
+    }
+    main{
+      section.first{
+        p{
+          width: 50%;
+          font-size: 1.2em;
+        }
+      }
+      section.second{
+        p{
+          width: 50%;
+          font-size: 1.2em;
+        }
+        img.img{
+          height: 255px;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 590px)  {
+  body{
+    header{
+      height: auto;
+      div.icon {
+        display: block;
+        .fa-bars {
+          display: table;
+          font-size: 40px;
+          margin: 0px auto;
+          color: whitesmoke;
+        }
+      }
+      nav{
+        display: block;
+        background: transparent;
+        position: relative;
+        height: auto;
+        a.navbar-brand {
+          display: block;
+          text-align: center;
+          float: none;
+        }
+        ul{
+          display: none;
+          li{
+            padding: 9px 0;
+            background: #67271c9e;
+            a{
+              padding: 0px 100px;
+              &:hover{
+                background: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    #main{
+      .row{
+        margin-right:0;
+        margin-left: 0;
+        h2{
+          font-size: 20px;
+        }
+        p{
+          font-size: 15px;
+        }
+        li{
+          font-size: 15px;
+        }
+        h3{
+          font-size: 20px;
+        }
+      }
+    }
+
+  }
+}
+@media all and (max-width: 480px) {
+  body{
+    header{
+      nav{
+
+      }
+    }
+    main{
+      section.first{
+        flex-direction: column;
+        p{
+          width: 90%;
+          margin: 0 auto;
+        }
+        img.img{
+          width: 81%;
+          margin: 4% auto;
+        }
+      }
+      section.second{
+        flex-direction: column;
+        p{
+          width: 90%;
+          margin: 0 auto;
+        }
+        img.img{
+          width: 81%;
+          margin: 4% auto;
+        }
+      }
+
+    }
+    footer{
+      div.contact-foot{
+        flex-direction: column;
+        ul.left{
+          margin: 2% auto;
+          text-align: center;
+        }
+        ul.right{
+          margin: 2% auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

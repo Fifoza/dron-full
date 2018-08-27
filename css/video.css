@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great");
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'M PLUS 1p', sans-serif; }
+  body div.icon {
+    display: none; }
+  body header nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-around;
+    background-color: black;
+    height: 45px;
+    z-index: 5; }
+    body header nav a.navbar-brand {
+      color: white;
+      text-decoration: none;
+      font-family: 'Amatic SC', cursive;
+      font-size: 33px;
+      font-weight: bold;
+      padding: unset; }
+    body header nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding-top: 11px; }
+      body header nav ul li a {
+        padding: 12px 24px;
+        text-decoration: none;
+        color: white; }
+        body header nav ul li a:hover {
+          color: #fac720;
+          background: white; }
+  body header div.logo {
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+    padding-top: 3rem; }
+    body header div.logo img {
+      width: 100%; }
+  body header h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: monospace; }
+  body .jumbotron {
+    margin-bottom: 0; }
+  body footer {
+    background: #343A40;
+    padding: 1% 0; }
+    body footer div.contact-foot {
+      display: flex;
+      justify-content: space-around; }
+      body footer div.contact-foot ul.left {
+        margin-right: 11%;
+        list-style: none; }
+        body footer div.contact-foot ul.left i {
+          color: gainsboro; }
+        body footer div.contact-foot ul.left li {
+          color: gainsboro; }
+          body footer div.contact-foot ul.left li a {
+            color: gainsboro;
+            text-decoration: none; }
+      body footer div.contact-foot ul.right {
+        list-style: none;
+        margin-left: 11%;
+        margin-top: 2%; }
+        body footer div.contact-foot ul.right li {
+          color: gainsboro; }
+          body footer div.contact-foot ul.right li a {
+            color: gainsboro;
+            text-decoration: none; }
+            body footer div.contact-foot ul.right li a:hover {
+              color: #1c699d; }
+    body footer span {
+      display: block;
+      color: gainsboro;
+      text-align: center;
+      letter-spacing: 3px; }
+
+@media all and (max-width: 1199px) and (min-width: 992px) {
+  body .jumbotron {
+    margin-bottom: 0; }
+    body .jumbotron .row div.col-6 {
+      max-width: none; } }
+@media all and (max-width: 991px) and (min-width: 768px) {
+  body .jumbotron {
+    margin-bottom: 0;
+    width: 100%; }
+    body .jumbotron .row {
+      flex-direction: column; }
+      body .jumbotron .row div.col-6 {
+        max-width: none; } }
+@media all and (max-width: 768px) and (min-width: 480px) {
+  body header div.icon {
+    display: block; }
+    body header div.icon .fa-bars {
+      display: table;
+      font-size: 40px;
+      margin: 0px auto;
+      color: black; }
+  body header nav {
+    display: block;
+    background: transparent;
+    position: relative;
+    height: auto; }
+    body header nav a.navbar-brand {
+      display: block;
+      text-align: center;
+      float: none; }
+    body header nav ul {
+      display: none; }
+      body header nav ul li {
+        padding: 9px 0;
+        background: #67271c9e; }
+        body header nav ul li a {
+          padding: 0px 100px; }
+          body header nav ul li a:hover {
+            background: none; }
+  body .jumbotron {
+    width: 100%;
+    margin-bottom: 0; }
+    body .jumbotron .row {
+      flex-direction: column; }
+      body .jumbotron .row div.col-6 {
+        max-width: none; } }
+@media all and (max-width: 590px) {
+  body header div.icon {
+    display: block; }
+    body header div.icon .fa-bars {
+      display: table;
+      font-size: 40px;
+      margin: 0px auto;
+      color: black; }
+  body header nav {
+    display: block;
+    background: transparent;
+    position: inherit; }
+    body header nav a.navbar-brand {
+      display: block;
+      text-align: center;
+      float: none; }
+    body header nav ul {
+      display: none; }
+      body header nav ul li {
+        padding: 9px 0;
+        background: #67271c9e; }
+        body header nav ul li a {
+          padding: 0px 100px; }
+          body header nav ul li a:hover {
+            background: none; }
+  body .jumbotron {
+    width: 100%;
+    margin-bottom: 0; }
+    body .jumbotron .row {
+      flex-direction: column; }
+      body .jumbotron .row div.col-6 {
+        max-width: none; } }
+@media all and (max-width: 480px) {
+  body header nav {
+    display: block;
+    background: transparent;
+    position: relative;
+    height: auto; }
+    body header nav a.navbar-brand {
+      display: block;
+      text-align: center;
+      float: none; }
+    body header nav ul {
+      display: none; }
+      body header nav ul li {
+        padding: 9px 0;
+        background: #67271c9e; }
+        body header nav ul li a {
+          padding: 0px 100px; }
+          body header nav ul li a:hover {
+            background: none; }
+  body .jumbotron {
+    width: 100%;
+    margin-bottom: 0; }
+    body .jumbotron .row {
+      flex-direction: column; }
+      body .jumbotron .row div.col-6 {
+        max-width: none; }
+  body footer div.contact-foot {
+    flex-direction: column; }
+    body footer div.contact-foot ul.left {
+      margin: 2% auto;
+      text-align: center; }
+    body footer div.contact-foot ul.right {
+      margin: 2% auto;
+      text-align: center; } }
+
+/*# sourceMappingURL=video.css.map */

@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great");
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body div.icon {
+  display: none; }
+body header {
+  background: url("../images/ТАЗИ да бъде главната-min.jpg"), no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 900px; }
+  body header nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-around;
+    background-color: black;
+    height: 45px;
+    z-index: 5; }
+    body header nav a.navbar-brand {
+      color: white;
+      text-decoration: none;
+      font-family: 'Amatic SC', cursive;
+      font-size: 33px;
+      font-weight: bold;
+      padding-top: unset; }
+    body header nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding-top: 11px; }
+      body header nav ul li a {
+        padding: 12px 24px;
+        text-decoration: none;
+        color: white; }
+        body header nav ul li a:hover {
+          color: #fac720;
+          background: white; }
+        body header nav ul li a:visited {
+          color: #fac720;
+          background: white; }
+  body header div.logo {
+    display: block;
+    width: 29%;
+    margin: 0 auto;
+    opacity: 0.3;
+    padding-top: 3rem; }
+    body header div.logo img {
+      width: 100%; }
+body main {
+  background: url("../gallery/4.jpg"), no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 900px; }
+  body main .container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 55vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+    background: rgba(211, 211, 211, 0.8); }
+    body main .container.gallery-container p.page-description {
+      text-align: center;
+      max-width: 800px;
+      margin: 25px auto;
+      color: #888;
+      font-size: 18px; }
+  body main .tz-gallery {
+    padding: 40px; }
+    body main .tz-gallery .lightbox img {
+      width: 100%;
+      margin-bottom: 30px;
+      transition: 0.2s ease-in-out;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
+      body main .tz-gallery .lightbox img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); }
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+  body header div.icon {
+    display: block; }
+    body header div.icon .fa-bars {
+      display: table;
+      font-size: 40px;
+      margin: 0px auto;
+      color: whitesmoke; }
+  body header nav {
+    display: block;
+    background: transparent;
+    position: inherit; }
+    body header nav a.navbar-brand {
+      display: block;
+      text-align: center; }
+    body header nav ul {
+      display: none; }
+      body header nav ul li {
+        padding: 9px 0;
+        background: #67271c9e; }
+        body header nav ul li a {
+          padding: 0px 100px; }
+          body header nav ul li a:hover {
+            background: none; }
+  body header div.user-image {
+    padding-top: 50%; }
+  body main section.first {
+    flex-direction: column; }
+    body main section.first p.first {
+      width: 100%;
+      text-align: center; }
+    body main section.first p {
+      width: 100%;
+      padding-top: 5%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.23); } }
+@media all and (min-width: 320px) and (max-width: 480px) {
+  body header div.icon {
+    display: block; }
+    body header div.icon .fa-bars {
+      display: table;
+      font-size: 40px;
+      margin: 0px auto;
+      color: whitesmoke; }
+  body header nav {
+    display: block;
+    background: transparent;
+    position: inherit; }
+    body header nav a.navbar-brand {
+      display: block;
+      text-align: center; }
+    body header nav ul {
+      display: none; }
+      body header nav ul li {
+        padding: 9px 0;
+        background: #67271c9e; }
+        body header nav ul li a {
+          padding: 0px 100px; }
+          body header nav ul li a:hover {
+            background: none; }
+  body header div.user-image {
+    padding-top: 80%; }
+  body main section.first {
+    flex-direction: column; }
+    body main section.first p.first {
+      width: 100%;
+      text-align: center; }
+    body main section.first p {
+      width: 100%;
+      padding-top: 5%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.23); }
+  body footer {
+    height: auto; }
+    body footer div.footer {
+      flex-direction: column; }
+      body footer div.footer div.contact {
+        text-align: center; } }
+
+/*# sourceMappingURL=demo.css.map */

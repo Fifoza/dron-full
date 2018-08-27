@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great");
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'M PLUS 1p', sans-serif; }
+  body div.icon {
+    display: none; }
+  body header {
+    background: url("../images/ТАЗИ да бъде главната-min.jpg"), no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: auto;
+    padding-bottom: 2%; }
+    body header nav {
+      display: flex;
+      width: 100%;
+      position: fixed;
+      justify-content: space-around;
+      background-color: black;
+      height: 45px;
+      z-index: 5; }
+      body header nav a.navbar-brand {
+        color: white;
+        text-decoration: none;
+        font-family: 'Amatic SC', cursive;
+        font-size: 33px;
+        font-weight: bold; }
+      body header nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 11px; }
+        body header nav ul li a {
+          padding: 12px 24px;
+          text-decoration: none;
+          color: white; }
+          body header nav ul li a:hover {
+            color: #fac720;
+            background: white; }
+    body header div.logo {
+      display: block;
+      width: 29%;
+      margin: 0 auto;
+      opacity: 0.3;
+      padding-top: 3rem; }
+      body header div.logo img {
+        width: 100%; }
+    body header h1 {
+      font-weight: bold;
+      text-shadow: 4px 4px 2px #969696;
+      text-align: center; }
+    body header .section {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      margin: 5% auto 0 auto;
+      border-radius: 20px;
+      width: 90%;
+      padding: 2%;
+      color: white;
+      background: linear-gradient(135deg, rgba(76, 76, 76, 0.61) 0%, rgba(89, 89, 89, 0.6) 12%, rgba(102, 102, 102, 0.6) 25%, rgba(71, 71, 71, 0.6) 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); }
+      body header .section article {
+        display: block;
+        margin-right: 1%; }
+        body header .section article h3 {
+          font-size: 2.65rem;
+          margin: 4% auto;
+          display: inline-block; }
+        body header .section article p {
+          font-size: 1.2em; }
+      body header .section .img {
+        width: 334%;
+        height: auto;
+        margin-top: 8%; }
+        body header .section .img img {
+          width: 100%; }
+  body footer {
+    background: #343A40;
+    padding: 1% 0;
+    font-size: 1.1em; }
+    body footer div.contact-foot {
+      display: flex;
+      justify-content: space-around; }
+      body footer div.contact-foot ul.left {
+        margin-right: 11%;
+        list-style: none; }
+        body footer div.contact-foot ul.left i {
+          color: gainsboro; }
+        body footer div.contact-foot ul.left li {
+          color: gainsboro; }
+          body footer div.contact-foot ul.left li a {
+            color: gainsboro;
+            text-decoration: none; }
+      body footer div.contact-foot ul.right {
+        list-style: none;
+        margin-left: 11%;
+        margin-top: 2%; }
+        body footer div.contact-foot ul.right li {
+          color: gainsboro; }
+          body footer div.contact-foot ul.right li a {
+            color: gainsboro;
+            text-decoration: none; }
+            body footer div.contact-foot ul.right li a:hover {
+              color: #1c699d; }
+    body footer span {
+      display: block;
+      color: gainsboro;
+      text-align: center;
+      letter-spacing: 3px; }
+
+@media all and (min-width: 1440px) {
+  body header .section article p {
+    font-size: 1.4em; } }
+@media all and (max-width: 1199px) and (min-width: 992px) {
+  body header .section div.img {
+    padding-top: 5%; } }
+@media all and (max-width: 991px) and (min-width: 768px) {
+  body header .section article p {
+    font-size: 0.92em; } }
+@media all and (max-width: 768px) and (min-width: 590px) {
+  body header .section article p {
+    font-size: 0.8em; }
+  body header .section div.img {
+    padding-top: 6%; } }
+@media all and (max-width: 590px) {
+  body div.icon {
+    display: block; }
+    body div.icon .fa-bars {
+      display: table;
+      font-size: 40px;
+      margin: 0px auto;
+      color: whitesmoke; }
+  body header nav {
+    background: transparent;
+    height: auto;
+    display: block;
+    position: inherit; }
+    body header nav .navbar-brand {
+      text-align: center;
+      display: block;
+      float: none; }
+    body header nav ul {
+      display: none; }
+      body header nav ul li {
+        padding: 9px 0;
+        background: #67271c9e; }
+        body header nav ul li a {
+          padding: 0px 100px; }
+          body header nav ul li a:hover {
+            background: none; }
+  body header .section {
+    display: flex;
+    flex-direction: column; }
+    body header .section article p {
+      font-size: 0.9em; }
+    body header .section div.img {
+      width: 70%;
+      margin: 0 auto; }
+      body header .section div.img img {
+        width: 100%; }
+  body footer div.contact-foot {
+    display: flex;
+    flex-direction: column; }
+    body footer div.contact-foot ul.left {
+      margin: 2% auto;
+      text-align: center; }
+    body footer div.contact-foot ul.right {
+      margin: 2% auto;
+      text-align: center; } }
+@media all and (max-width: 480px) {
+  body div.icon {
+    display: block; }
+    body div.icon .fa-bars {
+      display: table;
+      font-size: 40px;
+      margin: 0px auto;
+      color: whitesmoke; }
+  body header nav {
+    background: transparent;
+    height: auto;
+    display: block;
+    position: inherit; }
+    body header nav .navbar-brand {
+      text-align: center;
+      display: block;
+      float: none; }
+    body header nav ul {
+      display: none; }
+      body header nav ul li {
+        padding: 9px 0;
+        background: #67271c9e; }
+        body header nav ul li a {
+          padding: 0px 100px; }
+          body header nav ul li a:hover {
+            background: none; }
+  body header .section {
+    display: flex;
+    flex-direction: column; }
+    body header .section article p {
+      font-size: 0.9em; }
+    body header .section div.img {
+      width: 70%;
+      margin: 0 auto; }
+      body header .section div.img img {
+        width: 100%; }
+  body footer div.contact-foot {
+    display: flex;
+    flex-direction: column; }
+    body footer div.contact-foot ul.left {
+      margin: 2% auto;
+      text-align: center; }
+    body footer div.contact-foot ul.right {
+      margin: 2% auto;
+      text-align: center; } }
+
+/*# sourceMappingURL=forMe.css.map */

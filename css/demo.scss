@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great');
+
+*{
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  div.icon {
+    display: none;
+  }
+  header {
+    background: url("../images/ТАЗИ да бъде главната-min.jpg"), no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 900px;
+    nav {
+      display: flex;
+      width: 100%;
+      position: fixed;
+      justify-content: space-around;
+      background-color: black;
+      height: 45px;
+      z-index: 5;
+      a.navbar-brand {
+        color: white;
+        text-decoration: none;
+        font-family: 'Amatic SC', cursive;
+        font-size: 33px;
+        font-weight: bold;
+        padding-top: unset;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 11px;
+        li {
+
+          a {
+            padding: 12px 24px;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+              color: #fac720;
+              background: white;
+            }
+            &:visited {
+              color: #fac720;
+              background: white;
+            }
+          }
+        }
+      }
+    }
+
+    div.logo{
+      display: block;
+      width: 29%;
+      margin: 0 auto;
+      opacity: 0.3;
+      padding-top: 3rem;
+      img{
+        width: 100%;
+      }
+    }
+
+  }
+
+  main{
+    background: url("../gallery/4.jpg"), no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 900px;
+    .container.gallery-container {
+      background-color: #fff;
+      color: #35373a;
+      min-height: 55vh;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+      margin-top: 20px;
+      background: rgba(211, 211, 211, 0.8);
+      p.page-description {
+        text-align: center;
+        max-width: 800px;
+        margin: 25px auto;
+        color: #888;
+        font-size: 18px;
+      }
+    }
+    .tz-gallery {
+      padding: 40px;
+      .lightbox img {
+        width: 100%;
+        margin-bottom: 30px;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        &:hover{
+          transform: scale(1.05);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media all and (max-width: 1281px){
+  body {
+
+  }
+}
+// Large devices (desktops, 992px and up)
+@media all and(min-width: 1025px) and (max-width: 1280px) {
+
+  body {
+
+  }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media all and (min-width: 481px) and (max-width: 767px) {
+  body {
+
+
+    header {
+      div.icon {
+        display: block;
+        .fa-bars {
+          display: table;
+          font-size: 40px;
+          margin: 0px auto;
+          color: whitesmoke;
+        }
+      }
+      nav {
+        display: block;
+        background: transparent;
+        position: inherit;
+        a.navbar-brand{
+          display: block;
+          text-align: center;
+        }
+        ul{
+          display: none;
+          li{
+            padding: 9px 0;
+            background: #67271c9e;
+            a{
+              padding: 0px 100px;
+              &:hover{
+                background: none;
+              }
+            }
+          }
+        }
+      }
+      div.user-image{
+        padding-top: 50%;
+      }
+    }
+    main{
+      section.first{
+        flex-direction: column;
+        p.first{
+          width: 100%;
+          text-align: center;
+        }
+        p{
+          width: 100%;
+          padding-top: 5%;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.23);
+        }
+      }
+      section.second{
+
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media all and(min-width: 320px) and (max-width: 480px) {
+  body {
+
+    header {
+      div.icon {
+        display: block;
+        .fa-bars {
+          display: table;
+          font-size: 40px;
+          margin: 0px auto;
+          color: whitesmoke;
+        }
+      }
+      nav {
+        display: block;
+        background: transparent;
+        position: inherit;
+        a.navbar-brand{
+          display: block;
+          text-align: center;
+        }
+        ul{
+          display: none;
+          li{
+            padding: 9px 0;
+            background: #67271c9e;
+            a{
+              padding: 0px 100px;
+              &:hover{
+                background: none;
+              }
+            }
+          }
+        }
+      }
+      div.user-image{
+        padding-top: 80%;
+      }
+    }
+    main{
+      section.first{
+        flex-direction: column;
+        p.first{
+          width: 100%;
+          text-align: center;
+        }
+        p{
+          width: 100%;
+          padding-top: 5%;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.23);
+        }
+      }
+      section.second{
+
+      }
+    }
+    footer{
+      height: auto;
+      div.footer{
+        flex-direction: column;
+        div.contact{
+          text-align: center;
+        }
+      }
+    }
+  }
+}

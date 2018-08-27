@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great');
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'M PLUS 1p', sans-serif;
+  div.icon {
+    display: none;
+  }
+  header {
+    nav {
+      display: flex;
+      width: 100%;
+      position: fixed;
+      justify-content: space-around;
+      background-color: black;
+      height: 45px;
+      z-index: 5;
+      a.navbar-brand {
+        color: white;
+        text-decoration: none;
+        font-family: 'Amatic SC', cursive;
+        font-size: 33px;
+        font-weight: bold;
+        padding: unset;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 11px;
+        li {
+
+          a {
+            padding: 12px 24px;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+              color: #fac720;
+              background: white;
+            }
+          }
+        }
+      }
+    }
+    div.logo {
+      display: block;
+      width: 10%;
+      margin: 0 auto;
+
+      padding-top: 3rem;
+      img {
+        width: 100%;
+      }
+    }
+    h1{
+      font-size: 4rem;
+      text-align: center;
+      font-family: monospace;
+    }
+  }
+  .jumbotron{
+    margin-bottom: 0;
+
+    .row{
+
+    }
+  }
+  footer {
+    background: #343A40;
+    padding: 1% 0;
+    div.contact-foot {
+      display: flex;
+      justify-content: space-around;
+      ul.left {
+        margin-right: 11%;
+        list-style: none;
+        i {
+          color: gainsboro;
+        }
+        li {
+          color: gainsboro;
+          a{
+            color: gainsboro;
+            text-decoration: none;
+          }
+        }
+
+      }
+      ul.right {
+        list-style: none;
+        margin-left: 11%;
+        margin-top: 2%;
+        li {
+          color: gainsboro;
+          a{
+            color: gainsboro;
+            text-decoration: none;
+            &:hover{
+              color: #1c699d;
+            }
+          }
+        }
+      }
+
+    }
+    span {
+      display: block;
+      color: gainsboro;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+  }
+}
+@media all and(max-width: 1199px) and(min-width: 992px) {
+  body{
+    .jumbotron{
+      margin-bottom: 0;
+      .row{
+
+        div.col-6{
+          max-width: none;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 991px) and(min-width: 768px) {
+  body{
+    header{
+      nav{
+
+      }
+    }
+    .jumbotron{
+      margin-bottom: 0;
+      width: 100%;
+      .row{
+        flex-direction: column;
+        div.col-6{
+          max-width: none;
+          P {
+
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px)and (min-width: 480px){
+  body{
+    header{
+      div.icon {
+        display: block;
+
+        .fa-bars {
+          display: table;
+          font-size: 40px;
+          margin: 0px auto;
+          color: black;
+        }
+      }
+      nav{
+        display: block;
+        background: transparent;
+        position: relative;
+        height: auto;
+        a.navbar-brand {
+          display: block;
+          text-align: center;
+          float: none;
+        }
+        ul{
+          display: none;
+          li{
+            padding: 9px 0;
+            background: #67271c9e;
+            a{
+              padding: 0px 100px;
+              &:hover{
+                background: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .jumbotron{
+      width: 100%;
+      margin-bottom: 0;
+      .row{
+        flex-direction: column;
+        div.col-6{
+          max-width: none;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 590px)  {
+  body{
+    header{
+      div.icon {
+        display: block;
+        .fa-bars {
+          display: table;
+          font-size: 40px;
+          margin: 0px auto;
+          color: black;
+        }
+      }
+      nav{
+        display: block;
+        background: transparent;
+        position: inherit;
+        a.navbar-brand {
+          display: block;
+          text-align: center;
+          float: none;
+        }
+        ul{
+          display: none;
+          li{
+            padding: 9px 0;
+            background: #67271c9e;
+            a{
+              padding: 0px 100px;
+              &:hover{
+                background: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .jumbotron{
+      width: 100%;
+      margin-bottom: 0;
+      .row{
+        flex-direction: column;
+        div.col-6{
+          max-width: none;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  body{
+    header{
+      nav{
+        display: block;
+        background: transparent;
+        position: relative;
+        height: auto;
+        a.navbar-brand {
+          display: block;
+          text-align: center;
+          float: none;
+        }
+        ul{
+          display: none;
+          li{
+            padding: 9px 0;
+            background: #67271c9e;
+            a{
+              padding: 0px 100px;
+              &:hover{
+                background: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .jumbotron{
+      width: 100%;
+      margin-bottom: 0;
+      .row{
+        flex-direction: column;
+        div.col-6{
+          max-width: none;
+        }
+      }
+    }
+    footer{
+      div.contact-foot{
+        flex-direction: column;
+        ul.left{
+          margin: 2% auto;
+          text-align: center;
+        }
+        ul.right{
+          margin: 2% auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
